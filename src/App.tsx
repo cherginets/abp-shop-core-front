@@ -1,4 +1,5 @@
 import { Button, BUTTON_VARIANTS } from "./lib";
+import {Preloader} from "./lib/Preloader/Preloader";
 
 function App() {
   const onClick = (variant: string) => {
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+      <Preloader />
       <Button onClick={() => onClick("primary")}>primary</Button>
       <Button onClick={() => onClick("disabled")} disabled>
         disabled
