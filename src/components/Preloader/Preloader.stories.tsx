@@ -5,6 +5,7 @@ const meta: ComponentMeta<typeof Preloader> = {
   title: "Design System/Preloader",
   component: Preloader,
 };
+import "../../index.css"
 
 export default meta;
 

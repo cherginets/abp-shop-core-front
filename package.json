@@ -1,13 +1,12 @@
 {
   "name": "@cherginets/front-core",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "publish": "tsc && vite build && npm publish"
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
