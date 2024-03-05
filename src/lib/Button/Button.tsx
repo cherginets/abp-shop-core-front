@@ -12,6 +12,7 @@ export enum BUTTON_VARIANTS {
   DANGER = "danger",
 }
 
+
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: BUTTON_VARIANTS;
   onClick?: MouseEventHandler<HTMLButtonElement>;

@@ -19,6 +19,12 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["react", "react-dom", "styled-components"],
+      onwarn(warning, warn) {
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
+          return
+        }
+        warn(warning)
+      },
       output: {
         globals: {
           react: "React",

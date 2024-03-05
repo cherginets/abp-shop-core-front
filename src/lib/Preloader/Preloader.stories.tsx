@@ -8,13 +8,35 @@ const meta: ComponentMeta<typeof Preloader> = {
 
 export default meta;
 
-export const Indeterminate: ComponentStoryObj<typeof Preloader> = {
+const Wrapper = ({children, disableText = false}: {children: any, disableText?: boolean}) => {
+  return <div style={{display: "block", position: 'relative', width: 300, height: 300, border: '1px solid black'}}>
+    {!disableText && <span>span element</span>}
+    {children}
+    {!disableText && <span>span element</span>}
+  </div>
+}
+export const AsIs1: ComponentStoryObj<typeof Preloader> = {
   args: {
-    variant: "indeterminate",
+    position: null
   },
+  render: (args) => <Wrapper><Preloader {...args} /></Wrapper>
 };
-export const Determinate: ComponentStoryObj<typeof Preloader> = {
+export const AsIs2: ComponentStoryObj<typeof Preloader> = {
   args: {
-    variant: "determinate",
+    position: null
   },
+  render: (args) => <Wrapper disableText><Preloader {...args} /></Wrapper>
+};
+
+export const Absolute: ComponentStoryObj<typeof Preloader> = {
+  args: {
+    position: 'absolute',
+  },
+  render: (args) => <Wrapper><Preloader position={"absolute"} {...args} /></Wrapper>
+};
+export const Fixed: ComponentStoryObj<typeof Preloader> = {
+  args: {
+    position: "fixed"
+  },
+  render: (args) => <Wrapper><Preloader {...args} /></Wrapper>
 };
