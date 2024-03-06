@@ -1,5 +1,5 @@
 import {ReactNode} from "react";
-import {ThemeProvider} from "@mui/material";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import {ThemeProviderProps} from "@mui/material/styles/ThemeProvider";
 
 export type LibThemeProviderProps = {theme?: ThemeProviderProps['theme'], children: any}

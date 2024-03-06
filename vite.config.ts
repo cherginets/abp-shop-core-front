@@ -18,7 +18,16 @@ export default defineConfig({
       fileName: (format) => `react-ts-lib.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "styled-components"],
+      external: [
+        "react",
+        "react-dom",
+        "styled-components",
+        '@emotion/react',
+        '@emotion/styled',
+        "@mui/material",
+        '@mui/icons-material',
+        '@mui/material',
+      ],
       onwarn(warning, warn) {
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {
           return
