@@ -1,5 +1,5 @@
 import {useCallback, useState} from "react";
-import {Preloader} from "../components/Preloader/Preloader";
+import {Preloader} from "../components/Preloader";
 export function useLoader(loadingDefault: boolean) {
     const [loading, _setLoading] = useState<boolean>(loadingDefault);
 

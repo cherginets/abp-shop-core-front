@@ -1,3 +1,3 @@
-export { Preloader } from "../components/Preloader/Preloader";
-
-export {useLoader} from "../hooks/useLoader"
+export * from "../components";
+export * from "../hooks";
+export * from "../utils";

@@ -1,11 +1,11 @@
 import { ComponentMeta, ComponentStoryObj } from "@storybook/react";
-import { Preloader } from "./Preloader";
+import { Preloader } from "../components";
 
 const meta: ComponentMeta<typeof Preloader> = {
   title: "Design System/Preloader",
   component: Preloader,
 };
-import "../../index.css"
+import "../index.css"
 
 export default meta;
 

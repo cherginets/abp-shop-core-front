@@ -1,4 +1,4 @@
-import {Preloader} from "./components/Preloader/Preloader";
+import {Preloader} from "./components/Preloader";
 import {Box, Button, Grid, Stack, Typography} from "@mui/material";
 import {useLoader} from "./hooks/useLoader";
 

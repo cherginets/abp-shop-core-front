@@ -1,6 +1,6 @@
 import CircularProgress, {  CircularProgressProps,} from "@mui/material/CircularProgress";
 import {DetailedHTMLProps, HTMLAttributes, useMemo} from "react";
-import {LibThemeProvider, LibThemeProviderProps} from "../../lib/LibThemeProvider";
+import {LibThemeProvider, LibThemeProviderProps} from "../lib/LibThemeProvider";
 
 export type PreloaderLoadingType = boolean;
 export type PreloaderPositionType = null | undefined | 'absolute' | 'fixed';

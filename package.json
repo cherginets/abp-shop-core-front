@@ -1,6 +1,6 @@
 {
   "name": "@cherginets/front-core",
-  "version": "0.0.17",
+  "version": "0.1.2",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,7 +14,7 @@
     "@emotion/react": ">=11.11",
     "@emotion/styled": ">=11.11",
     "@mui/icons-material": ">=5.11",
-    "@mui/material": ">=5.13",
+    "@mui/material": ">=5.13"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
