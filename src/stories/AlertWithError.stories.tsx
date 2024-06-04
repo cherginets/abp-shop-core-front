@@ -6,7 +6,7 @@ const meta: ComponentMeta<typeof Preloader> = {
   component: Preloader,
 };
 import "../index.css"
-import AlertWithError from "../mui/AlertWithError";
+import {AlertWithError} from "../mui";
 
 export default meta;
 

@@ -1,6 +1,6 @@
 {
   "name": "@cherginets/front-core",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
