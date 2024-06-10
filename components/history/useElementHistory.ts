@@ -1,4 +1,4 @@
-import { n_error } from "@/core/utils/notifications";
+import { n_error } from "@/core/features/notifications";
 import { useLoader } from "@/core/hooks/useLoader";
 import { useCallback, useEffect, useState } from "react";
 

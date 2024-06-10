@@ -127,7 +127,7 @@ export const MuiLayout: FC<{
   topRightElements?: any;
   children?: any;
 }> = ({ left= [], top = [], links, topRightElements, children }) => {
-  const pathname = usePathname();
+  const pathname = usePathname() || "";
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 

@@ -25,7 +25,7 @@ const NextBreadcrumb = ({
   ...props
 }: TBreadCrumbProps) => {
   const paths = usePathname();
-  const pathNames = paths.split("/").filter((path) => path);
+  const pathNames = paths?.split("/").filter((path) => path) || [];
 
   return (
     <MuiBreadcrumbs aria-label="breadcrumb" {...props}>

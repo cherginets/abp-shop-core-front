@@ -1,5 +1,5 @@
 import { copyToClipboard } from "@/core/components/CopyToClipboard/clipboard";
-import { n_success } from "@/core/utils/notifications";
+import { n_success } from "@/core/features/notifications";
 import { ContentCopy } from "@mui/icons-material";
 import { IconButton, Typography, TypographyProps } from "@mui/material";
 
