@@ -24,7 +24,7 @@ import { CSSObject, Theme, styled, useTheme } from "@mui/material/styles";
 import { FC, Fragment, ReactNode, useMemo, useState } from "react";
 
 import { usePathname } from "next/navigation";
-import {Link} from "@/core/mui/NextMuiLink";
+import {Link} from "@/core/components/NextMuiLink";
 
 const drawerWidth = 240;
 

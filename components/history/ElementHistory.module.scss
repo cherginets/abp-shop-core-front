@@ -1,0 +1,68 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  //border: 1px solid rgba(0, 0, 0, 0.12);
+  //border-radius: 4px;
+}
+
+.newMessage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__input {
+    width: 100%;
+    flex-grow: 1;
+  }
+  &__button {
+    margin: 12px 0 12px auto;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: #ffffff;
+
+  &__firstLine {
+  }
+  &__text {
+  }
+}
+
+.firstLine {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.fieldIndex {
+  color: gray;
+  margin-right: 8px;
+  max-width: 10%;
+}
+.fieldPriority {
+  font-weight: 500;
+  margin-right: 8px;
+  max-width: 20%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.fieldWho {
+  width: 45%;
+  max-width: 45%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.fieldDate {
+  margin-left: auto;
+  width: 30%;
+  text-align: right;
+  white-space: nowrap;
+}
+.fieldText {
+  white-space: break-spaces;
+  word-break: break-word;
+}
