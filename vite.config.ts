@@ -19,6 +19,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: [
+        "next",
         "react",
         "react-dom",
         "styled-components",
@@ -26,7 +27,6 @@ export default defineConfig({
         '@emotion/styled',
         "@mui/material",
         '@mui/icons-material',
-        '@mui/material',
       ],
       onwarn(warning, warn) {
         if (warning.code === 'MODULE_LEVEL_DIRECTIVE') {

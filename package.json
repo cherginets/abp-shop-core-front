@@ -1,6 +1,6 @@
 {
   "name": "@cherginets/front-core",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,6 +14,7 @@
     "@emotion/styled": ">=11.11",
     "@mui/icons-material": ">=5.11",
     "@mui/material": ">=5.13",
+    "next": ">=14",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0"
   },
@@ -38,6 +39,7 @@
     "add": "^2.0.6",
     "babel-loader": "^8.2.5",
     "json": "^11.0.0",
+    "next": "^14.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.8",
