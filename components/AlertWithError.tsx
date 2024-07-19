@@ -5,7 +5,7 @@ export function AlertWithError({ error, ...props }: { error: any } & AlertProps)
   if (!error) return null;
   return (
     <Alert severity={"error"} {...props}>
-      <pre>{formatError(error)}</pre>
+      <pre style={{whiteSpace: "break-spaces"}}>{formatError(error)}</pre>
     </Alert>
   );
 }
