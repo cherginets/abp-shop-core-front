@@ -1,6 +1,6 @@
 import { formatError } from "@/core/utils/formatError";
 import { Fragment, ReactNode } from "react";
-import {ToastContainer, ToastOptions, toast, ToastContent} from "react-toastify";
+import { ToastContainer, ToastContent, ToastOptions, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const NotificationsProvider = ({ children }: { children: ReactNode }) => (

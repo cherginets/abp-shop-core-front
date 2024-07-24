@@ -1,6 +1,6 @@
+import { Preloader } from "@/core/components/Preloader";
 import { useElementHistory, useElementHistoryProps } from "@/core/components/history/useElementHistory";
-import {formatError} from "@/core/utils/formatError";
-import {Preloader} from "@/core/components/Preloader";
+import { formatError } from "@/core/utils/formatError";
 import { Add, Close, Send, Sync } from "@mui/icons-material";
 import { LoadingButton } from "@mui/lab";
 import { Alert, Button, Divider } from "@mui/material";

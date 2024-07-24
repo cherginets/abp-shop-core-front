@@ -7,15 +7,22 @@ test("formatError", () => {
   const values = [
     defaultError,
     [defaultError],
-    {error: defaultError},
-    {error: {error: {error: defaultError}}},
-    {response: {result: {error: defaultError}}},
-    {result: {error: defaultError}},
-    {result: {errors: defaultError}},
-    {errors: defaultError},
-    {}, null, undefined,
-    {a: 5}, 5, -5, false, true, 0
+    { error: defaultError },
+    { error: { error: { error: defaultError } } },
+    { response: { result: { error: defaultError } } },
+    { result: { error: defaultError } },
+    { result: { errors: defaultError } },
+    { errors: defaultError },
+    {},
+    null,
+    undefined,
+    { a: 5 },
+    5,
+    -5,
+    false,
+    true,
+    0
   ];
 
-  values.forEach((v) => expect(typeof formatError(v) === 'string', `"${v}" не строка`).toBeTruthy());
+  values.forEach((v) => expect(typeof formatError(v) === "string", `"${v}" не строка`).toBeTruthy());
 });
