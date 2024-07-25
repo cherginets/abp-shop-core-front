@@ -1,7 +1,13 @@
 "use client";
 
-import { ChevronLeft as ChevronLeftIcon, ChevronRight as ChevronRightIcon, Group, Menu as MenuIcon } from "@mui/icons-material";
 import {
+  ChevronLeft as ChevronLeftIcon,
+  ChevronRight as ChevronRightIcon,
+  Group,
+  Menu as MenuIcon
+} from "@mui/icons-material";
+import {
+  Badge,
   Box,
   CssBaseline,
   Divider,
@@ -14,17 +20,16 @@ import {
   AppBar as MuiAppBar,
   AppBarProps as MuiAppBarProps,
   Drawer as MuiDrawer,
+  Stack,
   Toolbar,
   Tooltip,
-  Typography,
-  Stack,
-  Badge,
+  Typography
 } from "@mui/material";
 import { CSSObject, Theme, styled, useTheme } from "@mui/material/styles";
 import { FC, Fragment, ReactNode, useMemo, useState } from "react";
 
+import { Link } from "@/core/components/NextMuiLink";
 import { usePathname } from "next/navigation";
-import {Link} from "@/core/components/NextMuiLink";
 
 const drawerWidth = 240;
 
@@ -126,7 +131,7 @@ export const MuiLayout: FC<{
   links: MuiLayoutLinkType[];
   topRightElements?: any;
   children?: any;
-}> = ({ left= [], top = [], links, topRightElements, children }) => {
+}> = ({ left = [], top = [], links, topRightElements, children }) => {
   const pathname = usePathname() || "";
   const theme = useTheme();
   const [open, setOpen] = useState(false);

@@ -1,5 +1,5 @@
+import { formatError } from "@/core/utils/formatError";
 import Alert, { AlertProps } from "@mui/material/Alert";
-import {formatError} from "@/core/utils/formatError";
 
 export function AlertWithError({ error, ...props }: { error: any } & AlertProps) {
   if (!error) return null;
