@@ -101,8 +101,8 @@ const Breadcrumbs: FC<BreadcrumbsProps> = (props) => {
             return "Контент";
           case "tariffs":
             return "Тарифы";
-          case "ports":
-            return "Порты";
+          case "devices":
+            return "Устройства";
 
           case "new-user":
             return "Новый пользователь";
@@ -114,8 +114,8 @@ const Breadcrumbs: FC<BreadcrumbsProps> = (props) => {
             return "Новый купон";
           case "new-server":
             return "Новый сервер";
-          case "new-port":
-            return "Новый порт";
+          case "new-device":
+            return "Новое устройство";
           case "new":
             return "Новый элемент";
 

@@ -12,6 +12,7 @@ export const formatError = (error: any): string => {
 
   const potentialError =
     error?.error ||
+    error?.errors ||
     error?.response?.data?.message ||
     error?.response?.data?.error ||
     error?.data?.errors ||
