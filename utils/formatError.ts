@@ -34,4 +34,4 @@ export const formatError = (error: any): string => {
   }
 
   return JSON.stringify(potentialError);
-};
+}
