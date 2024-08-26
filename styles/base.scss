@@ -15,3 +15,10 @@ body {
   //  width: 6px;
   //}
 }
+
+a {
+  &, &:active, &:focus, &hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
