@@ -1,5 +1,5 @@
 import { Option } from "@/core/formik/types/options";
-import Autocomplete, { AutocompleteProps } from "@/shared/mui/Autocomplete";
+import Autocomplete, { AutocompleteProps } from "@/core/mui/Autocomplete";
 import { useFormikContext } from "formik";
 
 export type FormikAutocompleteFieldProps<OptionType extends Option = Option> = {

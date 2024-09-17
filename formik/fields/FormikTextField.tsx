@@ -1,6 +1,6 @@
-import { isNumeric } from "@/shared/utils/isNumeric";
 import TextField, { TextFieldProps } from "@mui/material/TextField";
 import { useFormikContext } from "formik";
+import {isNumeric} from "@/core/utils/isNumeric";
 
 export default function FormikTextField({
   name,
