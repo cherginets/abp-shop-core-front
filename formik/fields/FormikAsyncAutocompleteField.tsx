@@ -1,4 +1,4 @@
-import { Option } from "@/shared/formik/types/options";
+import { Option } from "@/core/formik/types/options";
 import Autocomplete, { AutocompleteProps } from "@/shared/mui/Autocomplete";
 import { useFormikContext } from "formik";
 

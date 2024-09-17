@@ -1,13 +1,13 @@
-import { n_error } from "../../features/notifications";
+import { n_error } from "@/core/features/notifications";
+import FormikSwitchField from "@/core/formik/fields/FormikSwitchField";
+import { Option } from "@/core/formik/types/options";
 import { Publish, RestartAlt } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Button from "@mui/material/Button";
 import { Formik, FormikConfig } from "formik";
 import { useMemo } from "react";
-import FormikTextField from "../fields/FormikTextField";
-import FormikSwitchField from "../fields/FormikSwitchField";
-import {Option} from "../types/options";
+import {FormikTextField} from "@/core/formik";
 
 export type FormikFormProps = {
   innerRef?: any; // React.Ref<FormikProps<any>>

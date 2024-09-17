@@ -1,4 +1,4 @@
-import { Option } from "@/shared/formik/types/options";
+import { Option } from "@/core/formik/types/options";
 import { FormControl, FormHelperText, InputLabel, MenuItem, Select, SelectProps } from "@mui/material";
 import { useFormikContext } from "formik";
 import { useMemo } from "react";
