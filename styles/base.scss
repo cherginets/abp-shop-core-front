@@ -17,6 +17,7 @@ body {
 }
 
 a {
+  cursor: pointer;
   &, &:active, &:focus, &hover {
     text-decoration: none;
     color: inherit;
