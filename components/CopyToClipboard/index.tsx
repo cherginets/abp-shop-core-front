@@ -5,7 +5,7 @@ import { IconButton, Typography, TypographyProps } from "@mui/material";
 
 export default function CopyToClipboardTypography({
   textToCopy,
-  children,
+  children = textToCopy,
     successText = "Скопировано!",
   ...props
 }: TypographyProps & {
