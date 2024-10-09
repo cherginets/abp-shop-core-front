@@ -2,12 +2,13 @@ import TextField, { TextFieldProps } from "@mui/material/TextField";
 import { useFormikContext } from "formik";
 import {isNumeric} from "@/core/utils/isNumeric";
 
+export type FormikTextFieldProps = Omit<TextFieldProps, "name"> & Required<Pick<TextFieldProps, "name">>;
 export default function FormikTextField({
   name,
   helperText,
   type,
   ...props
-}: Omit<TextFieldProps, "name"> & Required<Pick<TextFieldProps, "name">>) {
+}: FormikTextFieldProps) {
   const formik = useFormikContext<any>();
 
   const onChange: TextFieldProps["onChange"] = (e) => {
