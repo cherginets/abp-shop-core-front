@@ -4,6 +4,7 @@ import {CHAR_RUBLE} from "../constants";
 export const MOMENT_FOR_FILENAME = "YYYYMMDDHHmmss";
 
 export const MOMENT_DATE_MYSQL = "YYYY-MM-DD HH:mm:ss";
+export const MOMENT_DATE_PRETTY = "YYYY-MM-DD HH:mm";
 
 export const formatMoney = (value: string | number) => {
     if(!value) value = 0;
