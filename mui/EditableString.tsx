@@ -7,10 +7,11 @@ import { useBoolean } from "usehooks-ts";
 
 type EditableStringProps = {
   initValue: string;
+  nullLabel?: string
   onEdit: (value: string) => Promise<any>;
   children: ReactNode;
 };
-const EditableString: FC<EditableStringProps> = ({ children, initValue, onEdit }: EditableStringProps) => {
+const EditableString: FC<EditableStringProps> = ({ children, initValue, onEdit, nullLabel }: EditableStringProps) => {
   const [value, setValue] = useState(initValue);
   useEffect(() => setValue(initValue), [initValue]);
 
