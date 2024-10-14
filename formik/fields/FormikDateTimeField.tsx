@@ -17,7 +17,7 @@ export default function FormikDateTimeField({label, name}: FormikDateTimeFieldPr
 
   const disabled = formik.isSubmitting
 
-  const buttonProps:Partial<ButtonProps> = {disabled, size: 'small', style: {padding: 0}}
+  const buttonProps:Partial<ButtonProps> = {disabled, size: 'small', style: {padding: 0}, variant: 'outlined'}
 
   return <Stack direction={'column'} spacing={1}>
     <TextField
@@ -31,7 +31,7 @@ export default function FormikDateTimeField({label, name}: FormikDateTimeFieldPr
         formik.setFieldValue(name, e.target.value)
       }}
     />
-    <Stack direction={'row'} spacing={0}>
+    <Stack direction={'row'} spacing={0} justifyContent={'space-between'}>
       <Button {...buttonProps} onClick={() => {
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.add(1, 'day'))
       }}>+1 дн</Button>
