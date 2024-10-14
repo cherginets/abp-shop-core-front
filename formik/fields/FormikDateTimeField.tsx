@@ -2,7 +2,7 @@
 
 import {useFormikContext} from "formik";
 import moment from "moment";
-import {Button, Stack, TextField} from "@mui/material";
+import {Button, ButtonProps, Stack, TextField} from "@mui/material";
 
 export type FormikDateTimeFieldProps = {
   name: string
@@ -15,6 +15,10 @@ export default function FormikDateTimeField({label, name}: FormikDateTimeFieldPr
 
   const value = momentValue.isValid() ? momentValue.format("YYYY-MM-DDTHH:mm") : "";
 
+  const disabled = formik.isSubmitting
+
+  const buttonProps:Partial<ButtonProps> = {disabled, size: 'small', style: {padding: 0}}
+
   return <Stack direction={'column'} spacing={1}>
     <TextField
       label={label}
@@ -22,21 +26,22 @@ export default function FormikDateTimeField({label, name}: FormikDateTimeFieldPr
       name="meeting-time"
       // value="2018-06-12T19:30"
       value={value}
+      disabled={disabled}
       onChange={e => {
         formik.setFieldValue(name, e.target.value)
       }}
     />
     <Stack direction={'row'} spacing={0}>
-      <Button size={'small'} style={{padding: 0}} onClick={() => {
+      <Button {...buttonProps} onClick={() => {
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.add(1, 'day'))
       }}>+1 дн</Button>
-      <Button size={'small'} style={{padding: 0}} onClick={() => {
+      <Button {...buttonProps} onClick={() => {
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.subtract(1, 'day'))
       }}>-1 дн</Button>
-      <Button size={'small'} style={{padding: 0}} onClick={() => {
+      <Button {...buttonProps} onClick={() => {
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.add(30, 'day'))
       }}>+30 дн</Button>
-      <Button size={'small'} style={{padding: 0}} onClick={() => {
+      <Button {...buttonProps} onClick={() => {
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.subtract(30, 'day'))
       }}>-30 дн</Button>
     </Stack>

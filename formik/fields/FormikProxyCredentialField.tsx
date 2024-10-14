@@ -16,7 +16,7 @@ export default function FormikProxyCredentialField({
       {...props}
       slotProps={{
         input: {
-          endAdornment: <IconButton onClick={() => {
+          endAdornment: <IconButton disabled={formik.isSubmitting} onClick={() => {
             formik.setFieldValue(props.name, generateRandomCredential())
           }}><Sync /></IconButton>
         }
