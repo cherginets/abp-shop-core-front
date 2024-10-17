@@ -1,10 +1,12 @@
 import { Option } from "@/core/formik/types/options";
 import Autocomplete, { AutocompleteProps } from "@/core/mui/Autocomplete";
 import { useFormikContext } from "formik";
+import {FormControl, FormHelperText} from "@mui/material";
 
 export type FormikAutocompleteFieldProps<OptionType extends Option = Option> = {
   label: string;
   name: string;
+  helperText?: string;
   loading: boolean;
   optionsMap?: Map<OptionType["value"], OptionType>;
   onAddElementClick?: () => any;
@@ -12,6 +14,7 @@ export type FormikAutocompleteFieldProps<OptionType extends Option = Option> = {
 
 export default function FormikAsyncAutocompleteField<OptionType extends Option = Option>({
   name,
+                                                                                           helperText,
   ...props
 }: FormikAutocompleteFieldProps<OptionType>) {
   const formik = useFormikContext<any>();
