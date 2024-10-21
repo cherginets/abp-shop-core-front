@@ -2,7 +2,7 @@
 
 import {useFormikContext} from "formik";
 import moment from "moment";
-import {Button, ButtonProps, Stack, TextField} from "@mui/material";
+import {Button, ButtonProps, Stack, TextField, Typography} from "@mui/material";
 
 export type FormikDateTimeFieldProps = {
   name: string
@@ -45,5 +45,6 @@ export default function FormikDateTimeField({label, name}: FormikDateTimeFieldPr
         if(momentValue.isValid()) formik.setFieldValue(name, momentValue.subtract(30, 'day'))
       }}>-30 дн</Button>
     </Stack>
+    {momentValue.isValid() && <Typography variant={'caption'}>{momentValue.fromNow()}</Typography>}
   </Stack>
 }
